@@ -1,0 +1,201 @@
+wallpaperurl="THEWALLPAPERURLGOESHERE"
+iconstyle="ICONSTYLENAMEGOESHERE"
+accentcolor="ACCENTCOLORGOESHERE"
+
+sudo wget "$wallpaperurl" -O "/usr/share/wallpapers/myarchlinuxwallpaper.jpg" &&
+echo "[ActionPlugins][0]" >> ~/.config/plasmarc &&
+echo "RightButton;NoModifier=org.kde.contextmenu" >> ~/.config/plasmarc &&
+echo "wheel:Vertical;NoModifier=org.kde.switchdesktop" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[ActionPlugins][1]" >> ~/.config/plasmarc &&
+echo "RightButton;NoModifier=org.kde.contextmenu" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][1]" >> ~/.config/plasmarc &&
+echo "ItemGeometries-1024x768=" >> ~/.config/plasmarc &&
+echo "ItemGeometriesHorizontal=" >> ~/.config/plasmarc &&
+echo "activityId=3190b837-ee1e-43fa-9181-04ecd9995f47" >> ~/.config/plasmarc &&
+echo "formfactor=0" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "lastScreen=0" >> ~/.config/plasmarc &&
+echo "location=0" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.folder" >> ~/.config/plasmarc &&
+echo "wallpaperplugin=org.kde.image" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][1][General]" >> ~/.config/plasmarc &&
+echo "ToolBoxButtonState=topcenter" >> ~/.config/plasmarc &&
+echo "ToolBoxButtonX=111" >> ~/.config/plasmarc &&
+echo "ToolBoxButtonY=29" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][1][Wallpaper][org.kde.image][General]" >> ~/.config/plasmarc &&
+echo "Image=file:///usr/share/wallpapers/myarchlinuxwallpaper.jpg" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2]" >> ~/.config/plasmarc &&
+echo "activityId=" >> ~/.config/plasmarc &&
+echo "formfactor=2" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "lastScreen=0" >> ~/.config/plasmarc &&
+echo "location=3" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.panel" >> ~/.config/plasmarc &&
+echo "wallpaperplugin=org.kde.image" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][14]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.digitalclock" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][15]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.showdesktop" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][16]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.panelspacer" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][16][Configuration][General]" >> ~/.config/plasmarc &&
+echo "length=626" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][17]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.panelspacer" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][18]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.systemmonitor" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][18][Configuration][Appearance]" >> ~/.config/plasmarc &&
+echo "chartFace=org.kde.ksysguard.piechart" >> ~/.config/plasmarc &&
+echo "title=Memory Usage" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][18][Configuration][SensorColors]" >> ~/.config/plasmarc &&
+echo "memory/physical/used=61,174,233" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][18][Configuration][Sensors]" >> ~/.config/plasmarc &&
+echo "highPrioritySensorIds=["memory/physical/used"]" >> ~/.config/plasmarc &&
+echo "lowPrioritySensorIds=["memory/physical/total"]" >> ~/.config/plasmarc &&
+echo "totalSensors=["memory/physical/usedPercent"]" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][19]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.systemmonitor" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][19][Configuration][Appearance]" >> ~/.config/plasmarc &&
+echo "chartFace=org.kde.ksysguard.barchart" >> ~/.config/plasmarc &&
+echo "title=Individual Core Usage" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][19][Configuration][SensorColors]" >> ~/.config/plasmarc &&
+echo "cpu/cpu0/usage=61,174,233" >> ~/.config/plasmarc &&
+echo "cpu/cpu1/usage=206,61,233" >> ~/.config/plasmarc &&
+echo "cpu/cpu2/usage=233,120,61" >> ~/.config/plasmarc &&
+echo "cpu/cpu3/usage=88,233,61" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][19][Configuration][Sensors]" >> ~/.config/plasmarc &&
+echo "highPrioritySensorIds=["cpu/cpu.*/usage"]" >> ~/.config/plasmarc &&
+echo "totalSensors=["cpu/all/usage"]" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][3]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.kickoff" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][3][Configuration]" >> ~/.config/plasmarc &&
+echo "PreloadWeight=100" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][3][Configuration][General]" >> ~/.config/plasmarc &&
+echo "favoritesPortedToKAstats=true" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][3][Configuration][Shortcuts]" >> ~/.config/plasmarc &&
+echo "global=Alt+F1" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][3][Shortcuts]" >> ~/.config/plasmarc &&
+echo "global=Alt+F1" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][4]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.pager" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][7]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.systemtray" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][Applets][7][Configuration]" >> ~/.config/plasmarc &&
+echo "PreloadWeight=55" >> ~/.config/plasmarc &&
+echo "SystrayContainmentId=8" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][ConfigDialog]" >> ~/.config/plasmarc &&
+echo "DialogHeight=84" >> ~/.config/plasmarc &&
+echo "DialogWidth=1024" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][2][General]" >> ~/.config/plasmarc &&
+echo "AppletOrder=3;17;19;18;16;4;7;14;15" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][8]" >> ~/.config/plasmarc &&
+echo "activityId=" >> ~/.config/plasmarc &&
+echo "formfactor=2" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "lastScreen=0" >> ~/.config/plasmarc &&
+echo "location=3" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.private.systemtray" >> ~/.config/plasmarc &&
+echo "wallpaperplugin=org.kde.image" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][8][Applets][10]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.devicenotifier" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][8][Applets][11]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.notifications" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][8][Applets][12]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.manage-inputmethod" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][8][Applets][13]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.keyboardlayout" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][8][Applets][9]" >> ~/.config/plasmarc &&
+echo "immutability=1" >> ~/.config/plasmarc &&
+echo "plugin=org.kde.plasma.clipboard" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[Containments][8][General]" >> ~/.config/plasmarc &&
+echo "extraItems=org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout" >> ~/.config/plasmarc &&
+echo "knownItems=org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.plasma.keyboardlayout" >> ~/.config/plasmarc &&
+echo "" >> ~/.config/plasmarc &&
+echo "[ScreenMapping]" >> ~/.config/plasmarc &&
+echo "itemsOnDisabledScreens=" >> ~/.config/plasmarc &&
+
+
+echo "[Theme]" >> ~/.config/plasmarc &&
+echo "name=oxygen-classic" >> ~/.config/plasmarc &&
+
+
+echo "" >> ~/.config/kdeglobals &&
+echo "[Icons]" >> ~/.config/kdeglobals &&
+echo "Theme=$iconstyle" >> ~/.config/kdeglobals &&
+echo "" >> ~/.config/kdeglobals &&
+
+
+echo "[General]" >> ~/.config/kdeglobals &&
+echo "AccentColor=$accentcolor" >> ~/.config/kdeglobals &&
+echo "ColorScheme=BreezeDark" >> ~/.config/kdeglobals &&
+echo "" >> ~/.config/kdeglobals &&
+
+echo "[KDE]" >> ~/.config/kdeglobals &&
+echo "widgetStyle=Oxygen" >> ~/.config/kdeglobals &&
+
+echo "" >> ~/.config/kwinrc &&
+echo "[org.kde.kdecoration2]" >> ~/.config/kwinrc &&
+echo "library=org.kde.oxygen" >> ~/.config/kwinrc &&
+echo "theme=Oxygen" >> ~/.config/kwinrc &&
+
+echo "[ActiveShadow]" >> ~/.config/oxygenrc &&
+echo "Enabled=false" >> ~/.config/oxygenrc &&
+echo "" >> ~/.config/oxygenrc &&
+echo "[Windeco]" >> ~/.config/oxygenrc &&
+echo "AnimationsEnabled=false" >> ~/.config/oxygenrc &&
+
+echo "" >> ~/.config/kcminputrc &&
+echo "[Mouse]" >> ~/.config/kcminputrc &&
+echo "cursorTheme=Oxygen_Zion" >> ~/.config/kcminputrc &&
+
+echo "[BusyCursorSettings]" >> ~/.config/klaunchrc &&
+echo "Blinking=true" >> ~/.config/klaunchrc &&
+echo "Bouncing=false" >> ~/.config/klaunchrc
