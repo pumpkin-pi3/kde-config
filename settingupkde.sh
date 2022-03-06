@@ -182,6 +182,22 @@ echo "[KDE]" >> ~/.config/kdeglobals &&
 echo "widgetStyle=Oxygen" >> ~/.config/kdeglobals &&
 
 echo "" >> ~/.config/kwinrc &&
+echo "[Effect-Blur]" >> ~/.config/kwinrc &&
+echo "BlurStrength=5" >> ~/.config/kwinrc &&
+echo "NoiseStrength=0" >> ~/.config/kwinrc &&
+echo "" >> ~/.config/kwinrc &&
+echo "[Effect-Glide]" >> ~/.config/kwinrc &&
+echo "InRotationAngle=10" >> ~/.config/kwinrc &&
+echo "OutRotationAngle=10" >> ~/.config/kwinrc &&
+echo "" >> ~/.config/kwinrc &&
+echo "[Effect-PresentWindows]" >> ~/.config/kwinrc &&
+echo "BorderActivateAll=9" >> ~/.config/kwinrc &&
+echo "" >> ~/.config/kwinrc &&
+echo "[Plugins]" >> ~/.config/kwinrc &&
+echo "blurEnabled=true" >> ~/.config/kwinrc &&
+echo "glideEnabled=true" >> ~/.config/kwinrc &&
+echo "kwin4_effect_scaleEnabled=false" >> ~/.config/kwinrc &&
+echo "" >> ~/.config/kwinrc &&
 echo "[org.kde.kdecoration2]" >> ~/.config/kwinrc &&
 echo "library=org.kde.oxygen" >> ~/.config/kwinrc &&
 echo "theme=Oxygen" >> ~/.config/kwinrc &&
