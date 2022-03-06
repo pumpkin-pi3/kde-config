@@ -100,6 +100,9 @@ echo "PreloadWeight=100" >> ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&
 echo "" >> ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&
 echo "[Containments][2][Applets][3][Configuration][General]" >> ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&
 echo "favoritesPortedToKAstats=true" >> ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&
+echo "icon=/usr/share/icons/Jade/places/96/archlinux-logo.svg" >> ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&
+echo "primaryActions=3" >> ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&
+echo "systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown" >> ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&
 echo "" >> ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&
 echo "[Containments][2][Applets][3][Configuration][Shortcuts]" >> ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&
 echo "global=Alt+F1" >> ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&
