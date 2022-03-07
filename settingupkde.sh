@@ -3,6 +3,8 @@ iconstyle="ICONSTYLENAMEGOESHERE"
 accentcolor="ACCENTCOLORGOESHERE"
 
 sudo wget "$wallpaperurl" -O "/usr/share/wallpapers/myarchlinuxwallpaper.jpg" &&
+echo "[PlasmaViews][Panel 2][Defaults]" >> ~/.config/plasmashellrc &&
+echo "thickness=29" >> ~/.config/plasmashellrc &&
 echo "[ActionPlugins][0]" >> ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&
 echo "RightButton;NoModifier=org.kde.contextmenu" >> ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&
 echo "wheel:Vertical;NoModifier=org.kde.switchdesktop" >> ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&
@@ -207,7 +209,7 @@ echo "theme=Oxygen" >> ~/.config/kwinrc &&
 
 echo "[ActiveShadow]" >> ~/.config/oxygenrc &&
 echo "Enabled=false" >> ~/.config/oxygenrc &&
-echo "" >> ~/.config/oxygenrc &&
+echo "" >> ~/.config/oxygenrc &&Hu
 echo "[Windeco]" >> ~/.config/oxygenrc &&
 echo "AnimationsEnabled=false" >> ~/.config/oxygenrc &&
 
@@ -217,4 +219,15 @@ echo "cursorTheme=Oxygen_Zion" >> ~/.config/kcminputrc &&
 
 echo "[BusyCursorSettings]" >> ~/.config/klaunchrc &&
 echo "Blinking=true" >> ~/.config/klaunchrc &&
-echo "Bouncing=false" >> ~/.config/klaunchrc
+echo "Bouncing=false" >> ~/.config/klaunchrc &&
+
+dbus-send --session --dest=org.kde.plasmashell --type=method_call /PlasmaShell org.kde.PlasmaShell.evaluateScript 'string:
+var Desktops = desktops();
+for (i=0;i<Desktops.length;i++) {
+        d = Desktops[i];
+        d.wallpaperPlugin = "org.kde.image";
+        d.currentConfigGroup = Array("Wallpaper",
+                                    "org.kde.image",
+                                    "General");
+        d.writeConfig("Image", "file:///usr/share/wallpapers/myarchlinuxwallpaper.jpg");
+}'
