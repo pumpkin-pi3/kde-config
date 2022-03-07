@@ -209,7 +209,7 @@ echo "theme=Oxygen" >> ~/.config/kwinrc &&
 
 echo "[ActiveShadow]" >> ~/.config/oxygenrc &&
 echo "Enabled=false" >> ~/.config/oxygenrc &&
-echo "" >> ~/.config/oxygenrc &&Hu
+echo "" >> ~/.config/oxygenrc &&
 echo "[Windeco]" >> ~/.config/oxygenrc &&
 echo "AnimationsEnabled=false" >> ~/.config/oxygenrc &&
 
