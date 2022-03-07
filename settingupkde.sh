@@ -221,4 +221,4 @@ echo "[BusyCursorSettings]" >> ~/.config/klaunchrc &&
 echo "Blinking=true" >> ~/.config/klaunchrc &&
 echo "Bouncing=false" >> ~/.config/klaunchrc &&
 
-cp "/usr/share/applications/org.kde.latte-dock.desktop" "~/.config/autostart/" &&
+cp "/usr/share/applications/org.kde.latte-dock.desktop" "~/.config/autostart/"
