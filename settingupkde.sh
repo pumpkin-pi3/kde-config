@@ -221,6 +221,8 @@ echo "[BusyCursorSettings]" >> ~/.config/klaunchrc &&
 echo "Blinking=true" >> ~/.config/klaunchrc &&
 echo "Bouncing=false" >> ~/.config/klaunchrc &&
 
+cp "/usr/share/applications/org.kde.latte-dock.desktop" "~/.config/autostart/" &&
+
 dbus-send --session --dest=org.kde.plasmashell --type=method_call /PlasmaShell org.kde.PlasmaShell.evaluateScript 'string:
 var Desktops = desktops();
 for (i=0;i<Desktops.length;i++) {
